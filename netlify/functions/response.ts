@@ -1,4 +1,4 @@
-import type {Config} from '@netlify/functions'
+import type { Config } from '@netlify/functions'
 
 export default async function handler() {
   return Response.json({
