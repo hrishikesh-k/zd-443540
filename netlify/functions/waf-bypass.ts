@@ -1,9 +1,9 @@
-import type { Config } from '@netlify/functions'
+import type { Config, Context } from '@netlify/functions'
 
-export default async function (req: Request) {
+export default async function (req: Request, context: Context) {
   const bypassToken = req.headers.get('x-nf-waf-bypass-token')
   console.log('Bypass Token:', bypassToken)
-  const res = await fetch('https://zd-443540.netlify.app/response', {
+  const res = await fetch(`${context.site.url}/response`, {
     headers: {
       'x-nf-waf-bypass-token': bypassToken || '',
     }
