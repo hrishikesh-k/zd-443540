@@ -1,5 +1,5 @@
 import { NextRequest } from "next/server"
 
 export async function POST(_: NextRequest) {
-  return Response.json({ success: true })
+  return Response.json({ success: "true" })
 }
