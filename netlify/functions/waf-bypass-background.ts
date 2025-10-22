@@ -9,9 +9,9 @@ export default async function (req: Request) {
     }
   })
   const json = await res.json()
-  return Response.json(json)
+  console.log('Response JSON:', json)
 }
 
 export const config: Config = {
-  path: '/waf-bypass'
+  path: '/waf-bypass-background'
 }
