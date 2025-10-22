@@ -432,6 +432,13 @@
     "@emnapi/runtime" "^1.4.3"
     "@tybys/wasm-util" "^0.10.0"
 
+"@netlify/edge-functions@^3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@netlify/edge-functions/-/edge-functions-3.0.1.tgz#771ede0deab097414bc47c9bcc74fc0c2b909d60"
+  integrity sha512-5Rd+gd2uD/iHReiY2p0KhVpgYnWKJsFyey2CN8WwGLQTq0GA7CEWkEMyks1azuAkChlqS4YJbpa//lMBmyrjSA==
+  dependencies:
+    "@netlify/types" "2.1.0"
+
 "@netlify/functions@5.0.1":
   version "5.0.1"
   resolved "https://registry.yarnpkg.com/@netlify/functions/-/functions-5.0.1.tgz#93a503db7ceb0550126e06d2a6bfa36e1c3653ca"
